@@ -1,18 +1,24 @@
-public class Hambre {
+public class Hambre implements Estado{
     Tamagotchi t;
     public Hambre (Tamagotchi t){
         this.t=t;
         System.out.println("estoy Bien");
     }
-    public void come(){
+
+    @Override
+    public void come() {
         t.setEstado(new Feliz(t));
-
-    }
-    public void toma(){
-        t.setEstado( new Triste(t));
     }
 
-    public void mimo (){
+    @Override
+    public void toma() {
+        t.setEstado((Estado) new Triste(t));
+    }
+
+    @Override
+    public void mimos() {
 
     }
+
+
 }

@@ -1,4 +1,4 @@
-public class Feliz {
+public class Feliz implements Estado {
     Tamagotchi t;
     public Feliz(Tamagotchi t) {
         this.t = t;
@@ -6,4 +6,18 @@ public class Feliz {
 
     }
 
+    @Override
+    public void come() {
+
+    }
+
+    @Override
+    public void toma() {
+
+    }
+
+    @Override
+    public void mimos() {
+
+    }
 }
