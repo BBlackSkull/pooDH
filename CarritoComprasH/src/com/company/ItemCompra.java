@@ -10,7 +10,8 @@ public abstract class ItemCompra {
     public abstract double consultarPrecio();
 
     public String mostrar() {
-        return mostrar();
+
+        return "nombre: " + nombre;
     }
 
     public String getNombre() {

@@ -11,6 +11,12 @@ public class Producto extends ItemCompra {
 
      @Override
      public double consultarPrecio() {
-          return 0;
+          return precio;
+     }
+
+     @Override
+     public String toString() {
+          return "Producto{" + super.getNombre() +
+                  "precio=" + precio +  '}';
      }
 }

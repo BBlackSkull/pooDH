@@ -6,9 +6,10 @@ public class Carrito {
     private ArrayList<ItemCompra> compra;
 
     public Carrito (){
+
         compra = new ArrayList<>();
     }
-    public void agregarItem(ItemCompra item){
+    public void agregarItems(ItemCompra item){
         compra.add(item);
     }
     public double calcularTotal(){
