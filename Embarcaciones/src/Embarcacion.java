@@ -13,7 +13,5 @@ public abstract class Embarcacion {
         this.añoFabricante = añoFabricante;
     }
 
-    public double montoAlquiler() {
-        return precioBase;
-    }
+    public abstract double montoAlquiler();
 }
